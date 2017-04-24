@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle ReactDemoProject@0.0.1~prestart: ReactDemoProject@0.0.1
+6 silly lifecycle ReactDemoProject@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle ReactDemoProject@0.0.1~start: ReactDemoProject@0.0.1
+8 verbose lifecycle ReactDemoProject@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle ReactDemoProject@0.0.1~start: PATH: c:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;c:\Users\HP\Desktop\react projects\ReactDemoProject\node_modules\.bin;c:\Users\HP\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\bin;c:\Python27\;c:\Python27\Scripts;c:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Hewlett-Packard\HP ProtectTools Security Manager\Bin\;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;c:\adt-bundle-windows-x86_64-20130729\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;c:\Program Files\Java\jdk1.7.0_25\bin;c:\apache-maven-3.3.3-src\apache-maven-3.3.3;c:\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;c:\Users\Garima\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;c:\Android Studio\gradle\gradle-2.2.1\bin;c:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Git\cmd;c:\Akshay\android-studio\gradle\gradle-2.4\bin; C;C:\Program Files (x86)\Git\Akshay\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;c:\ProgramData\chocolatey\bin;c:\Program Files\nodejs\;c:\Program Files (x86)\Yarn\bin;c:\Program Files (x86)\Skype\Phone\;c:\Akshay\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;c:\Users\HP\AppData\Roaming\npm;c:\Users\HP\AppData\Local\atom\bin;c:\Users\HP\AppData\Local\Yarn\.bin
+10 verbose lifecycle ReactDemoProject@0.0.1~start: CWD: c:\Users\HP\Desktop\react projects\ReactDemoProject
+11 silly lifecycle ReactDemoProject@0.0.1~start: Args: [ '/d /s /c',
+11 silly lifecycle   'node node_modules/react-native/local-cli/cli.js start' ]
+12 silly lifecycle ReactDemoProject@0.0.1~start: Returned: code: 3221225786  signal: null
+13 info lifecycle ReactDemoProject@0.0.1~start: Failed to exec start script
+14 verbose stack Error: ReactDemoProject@0.0.1 start: `node node_modules/react-native/local-cli/cli.js start`
+14 verbose stack Exit status 3221225786
+14 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:279:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:192:7)
+14 verbose stack     at ChildProcess.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:192:7)
+14 verbose stack     at maybeClose (internal/child_process.js:890:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid ReactDemoProject@0.0.1
+16 verbose cwd c:\Users\HP\Desktop\react projects\ReactDemoProject
+17 error Windows_NT 6.2.9200
+18 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v7.5.0
+20 error npm  v4.1.2
+21 error code ELIFECYCLE
+22 error ReactDemoProject@0.0.1 start: `node node_modules/react-native/local-cli/cli.js start`
+22 error Exit status 3221225786
+23 error Failed at the ReactDemoProject@0.0.1 start script 'node node_modules/react-native/local-cli/cli.js start'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the ReactDemoProject package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node node_modules/react-native/local-cli/cli.js start
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs ReactDemoProject
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls ReactDemoProject
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
