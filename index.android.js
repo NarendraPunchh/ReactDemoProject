@@ -13,7 +13,7 @@ import MainComponent from './src/MainComponent';
 
 export default class ReactDemoProject extends Component {
 
-  render() {
+  render() {   
     return (
       <MainComponent/>
     );

@@ -24,8 +24,8 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: null,
-      password: null,
+      username: 'default user',
+      password: 'default pwd',
     }
     this.btnClick = this.btnClick.bind(this);
   }
@@ -43,10 +43,11 @@ btnClick(){
       ApiIntructor
       .fetchMovieData()
       .then((response) => {
-        this.props.navigator.push({
-          name: 'Home',
-          data: response
-        });
+        this.props.updateState('Home', response);
+        // this.props.navigator.push({
+        //   name: 'Home',
+        //   data: response
+        // });
      })
       .catch(function (error) {
         console.warn(error); 
@@ -69,12 +70,14 @@ btnClick(){
         <TextInput
           style={{ width: width - 40 }}
           placeholder="User Name"
+          value={this.state.username}
           onChangeText={(text) => { this.setState({ username: text })}}
         />
         <TextInput
           style={{ width: width - 40 }}
           placeholder="Password"
           secureTextEntry
+          value={this.state.password}
           onChangeText={(text) => { this.setState({ password: text })}}
         />
         <TouchableOpacity

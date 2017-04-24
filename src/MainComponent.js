@@ -17,21 +17,24 @@ export default class MainComponent extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { scene: 'Splash' };
+    this.state = { scene: 'Splash', response: null };
     setTimeout(() => {
-      this.setState({scene: 'Login'})
+      this.updateSceneState('Login');
     }, 2000);
   }
   
+  updateSceneState(scene, response) {
+    this.setState({scene, response});
+  }
+  
   render() {
+    let com = null;
     switch (this.state.scene) {
-      case 'Splash':
-        return Splash;
-      case 'Login':
-        return Login;
-      case 'Home':
-        return Home;
+      case 'Login': com = Login; break;
+      case 'Home': com = Home; break;
+      default: com = Splash;
     }
+    return React.createElement(com, { updateState: this.updateSceneState.bind(this), response: this.state.response});
   }
 
 }
