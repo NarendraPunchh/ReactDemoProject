@@ -13,13 +13,12 @@ import Login from './Login';
 import Home from './Home';
 
 export default class MainComponent extends Component {
-
-
+  
   constructor(props) {
     super(props);
     this.state = { scene: 'Splash', response: null };
     setTimeout(() => {
-      this.updateSceneState('Login');
+      this.updateSceneState('Login',null);
     }, 2000);
   }
   
