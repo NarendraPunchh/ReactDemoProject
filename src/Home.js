@@ -41,7 +41,11 @@ export default class Home extends Component {
   
   render() {
     return(
-    <View style={{flex: 1, paddingTop: 22}}>
+    <View style={{flex: 1}}>
+    <View style={{justifyContent:'center',alignItems:'center',height:50,backgroundColor:'#3AB37C'}}>
+    <Text style={{width:'100%',textShadowColor:'#000000',textShadowOffset:{width:1,height:1},textShadowRadius:1,fontWeight:'bold',fontSize:20,textAlign: 'center',
+    color: '#FFF'}}>HOME</Text>
+    </View>
     <ListView
       dataSource={this.state.dataSource}
       renderRow={this.renderRow.bind(this)}
