@@ -11,6 +11,6 @@ export default class ApiIntructor {
     }
     
     static fetchMovieData(){
-      return API_CLIENT.get('react-native/movies.json');
+      return API_CLIENT.get('movies.json');
     }
 }

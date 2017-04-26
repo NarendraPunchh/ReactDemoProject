@@ -20,7 +20,6 @@ import {
 } from 'react-native';
 import ApiIntructor from './Networking/Config/ApiIntructor';
 export default class Login extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -36,30 +35,22 @@ btnClick(){
   
   if(username==null || username =='')
     Alert.alert('Please enter valid username');
-
   else if(password==null || password =='')
     Alert.alert('Please enter valid password');
   else{
       ApiIntructor
       .fetchMovieData()
       .then((response) => {
-        this.props.updateState('Home', response);
-        // this.props.navigator.push({
-        //   name: 'Home',
-        //   data: response
-        // });
+        this.props.updateState('Home', response.data);
      })
       .catch(function (error) {
-        console.warn(error); 
+        console.warn("error="+error); 
     });
     }
 //  Alert.alert(`User: ${username}, Pass: ${password}`);
 }
 
   render() {
-    let pic = {
-      uri: 'https://pos.toasttab.com/hs-fs/hubfs/Punchh_logotag_small.jpg?t=1486849914720&width=1024&name=Punchh_logotag_small.jpg'
-    };
     const { width } = Dimensions.get('window');
     return (
       <View style={styles.container}>
