@@ -23,8 +23,8 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: 'default user',
-      password: 'default pwd',
+      username: '',
+      password: '',
     }
     this.btnClick = this.btnClick.bind(this);
   }
